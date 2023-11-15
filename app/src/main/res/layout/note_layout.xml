@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="660dp"
+    android:id="@+id/cl"
+    android:background="@color/white">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:hint="Title"
+            android:layout_margin="5dp"
+            android:background="@drawable/border_btn"
+            android:textColorHint="#BA000000"
+            android:paddingStart="15dp"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            tools:ignore="MissingConstraints,RtlSymmetry"
+            android:autofillHints="title" />
+
+
+        <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:layout_marginBottom="65dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <EditText
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Start typing"
+                android:textColorHint="#BA000000"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    </LinearLayout>
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/checkBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/cl"
+        app:layout_constraintEnd_toEndOf="@+id/cl"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/baseline_check_24"
+        app:maxImageSize="40dp"
+        android:tint="@color/black"
+        android:contentDescription="float" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/closeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/cl"
+        app:layout_constraintBottom_toBottomOf="@+id/cl"
+        android:layout_marginBottom="20dp"
+        app:maxImageSize="40dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/baseline_clear_24" />-->
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/border_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/cl"
+        app:layout_constraintStart_toStartOf="@+id/cl"
+        android:src="@drawable/baseline_clear_24"/>
+
+    <ImageView
+        android:id="@+id/check"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/border_btn"
+        app:layout_constraintEnd_toEndOf="@+id/cl"
+        app:layout_constraintBottom_toBottomOf="@+id/cl"
+        android:src="@drawable/baseline_check_24"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
